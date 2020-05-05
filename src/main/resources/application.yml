@@ -1,0 +1,5 @@
+server:
+  port: 8082
+
+zookeeper:
+  address: 115.159.152.204:2181
