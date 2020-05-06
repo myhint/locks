@@ -19,8 +19,8 @@ public class MyConfig {
 
   @Bean
   public CuratorFramework curatorFramework() {
-    return CuratorFrameworkFactory.newClient("115.159.152.204:2181",
-        new RetryNTimes(10, 5000));
+    String zkAddress = "127.0.0.1:2181";
+    return CuratorFrameworkFactory.newClient(zkAddress, new RetryNTimes(10, 5000));
   }
 
 }
